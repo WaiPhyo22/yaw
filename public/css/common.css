@@ -1,0 +1,350 @@
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    word-wrap: break-word;
+}
+
+input:focus,
+button,
+textarea,
+.btn,
+a {
+    outline: 0px !important;
+    box-shadow: none !important;
+}
+
+select {
+    outline: 0px !important;
+    box-shadow: none !important;
+}
+
+.jumbotron {
+    padding: 10px 10px;
+    background-color: #f4ecf4;
+}
+
+.btn-default {
+    margin: 0 20px;
+    width: 150px;
+    border-radius: 3px;
+    background-color: #8b56ac;
+    color: white;
+}
+
+.btn-copy {
+    margin: 0 20px;
+    border-radius: 3px;
+    background-color: #8b56ac;
+    color: white;
+}
+.btn-copy:hover {
+    color: white;
+}
+
+.btn-small {
+    margin: 0px;
+    width: 90px;
+}
+
+.btn-long {
+    width: 190px;
+}
+
+.btn-danger {
+    margin: 0px;
+    width: 90px;
+    color: white;
+    border-radius: 3px;
+    background-color: crimson;
+}
+
+.btn-danger-long {
+    width: 110px;
+}
+
+.btn-fixed-height {
+    height: 36.4px;
+}
+
+.btn-default:hover {
+    color: white;
+}
+
+.logout-btn:hover {
+    color: black;
+}
+
+.btn-dropdown {
+    background-color: white;
+}
+
+.user-list-table {
+    min-width: 1100px;
+}
+
+tr,
+td {
+    white-space: normal;
+    word-break: break-all;
+}
+
+.table thead th {
+    vertical-align: top;
+}
+
+/* nav icon  */
+.navbar {
+    background-color: #8b56ac;
+    color: white;
+    height: 52px;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 240px;
+    z-index: 5;
+}
+
+.toggled .navbar {
+    padding-left: 40px;
+}
+
+/* error message */
+.error {
+    margin-top: 10px;
+    color: crimson;
+    font-size: 12px;
+}
+
+.fa-exclamation-circle {
+    color: crimson;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: white;
+}
+
+.content-height {
+    min-height: calc(100vh - 55px);
+    margin-top: 50px;
+}
+
+#ui-datepicker-div {
+    z-index: 100 !important;
+}
+
+.modal-backdrop {
+    z-index: 90;
+}
+
+.sub-heading textarea {
+    height: 40px;
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+    display: none;
+}
+
+/* admin popup container */
+.admin-popup-box {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.admin-popup-box .popup-text {
+    visibility: hidden;
+    width: 400px;
+    background-color: #F7F7F7;
+    color: black;
+    text-align: center;
+    border: 1px solid #F7F7F7;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 3;
+    top: 40px;
+    margin-left: -356px;
+    font-size: 0.9375rem;
+    text-align: left;
+    word-break: break-word;
+}
+
+/*popup list group */
+.pop-box-left-list {
+    width: 150px;
+    min-width: 150px;
+    text-align: left;
+}
+
+.popup-text a {
+    font-size: 0.9375rem;
+}
+
+.pop-box-list-bg-color {
+    background-color: #F7F7F7;
+}
+
+/* Toggle this class - hide and show the popup */
+.admin-popup-box .show {
+    visibility: visible;
+}
+
+/* end admin popup container */
+
+.text-underline {
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+.default-textbox-width {
+    width: 400px;
+    align-items: center;
+}
+
+.showError {
+    margin-top: -15px;
+    padding-bottom: 15px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.card-header:not(.collapsed) .rotate-icon {
+    transform: rotate(180deg);
+}
+
+.form-control.id-table-column[readonly] {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.icon {
+    color: #8b56ac;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.icon-red {
+    color: crimson;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.icon-red-disable {
+    color: #dee2e6;
+    font-size: 20px;
+}
+
+.maildeleteicon {
+    margin-top: 15px;
+}
+
+.mailbox {
+    width: 100%;
+}
+
+.form-check-inline {
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+textarea {
+    resize: none;
+}
+
+.modal-body span {
+    word-break: break-all;
+    font-size: 18px;
+}
+
+pre {
+    font-size: 15px;
+    font-family: "Segoe UI";
+}
+
+.modal-title {
+    font-size: 15px;
+}
+
+.agree-status {
+    font-size: 18px;
+}
+
+.w-35-px {
+    width: 35px;
+}
+
+.pre-wrap-break {
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+/* For holiday check loading overlay */
+#loadingOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+#loadingOverlay .loading-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+}
+
+#loadingOverlay .loading-content .spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 4px solid #ffffff;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.unanswered-eqnuete-user-list{
+    background-color: #F7F7F7;
+}
+
+.section-about {
+    background-color: rgb(242, 242, 242);
+    margin-top: 16px;
+    padding: 30px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.section-about .heading-primary {
+    text-align: center;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.section-about .body-text {
+    text-align: center;
+    font-size: 12px;
+}
