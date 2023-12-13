@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/waiphyo', function () {
+    return view('waiphyo');
+});
+
 Route::namespace('App\Http\Controllers')->group(function () {
     Route::get('/login', 'LoginController@index');
     Route::post('/login/checkLogin', 'LoginController@checkLogin');
