@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\UserEditRequest;
+use App\Http\Requests\ChangePasswordByAdminRequest;
 use App\Http\Requests\ChangePasswordRequest;
 use App\Http\Requests\UserRegisterRequest;
-use App\Models\User;
 use App\Services\UserService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -193,5 +193,41 @@ class LoginUserController extends Controller
         }
 
         return redirect('/user/list')->with('successMsg', 'Your password changed.');
+    }
+
+    /**
+     * show change password by admin page
+     *
+     */
+    public function changePasswordByAdmin(int $userId)
+    {
+        $userInfo = $this->userService->getUserInfoByID($userId);
+
+        if ($userInfo === UserService::USER_ID_NOT_FOUND) {
+            return redirect('/404');
+        } elseif ($userInfo === UserService::USER_ID_ALREADY_DELETED) {
+            return redirect(session()->get('prevUrl'))->with('errorMsg', 'This user already deleted.');
+        } elseif ($userInfo === UserService::DB_ERROR) {
+            return redirect('/500');
+        }
+
+        return view('users.change-pwd-by-admin', ['userId' => $userId, 'email' => $userInfo['mail_address'], 'name' => $userInfo['name']]);
+    }
+
+    /**
+     * change password by admin complete
+     *
+     * @param ChangePasswordByAdminRequest $request
+     */
+    public function changePasswordByAdminComplete(int $userId, ChangePasswordByAdminRequest $request)
+    {
+        $data = $request->all();
+        $res = $this->userService->updatePassword($userId, $data);
+
+        if ($res === userService::FAIL) {
+            return redirect('/500');
+        }
+
+        return redirect($request->session()->get('prevUrl'))->with('successMsg', 'Updated password');
     }
 }

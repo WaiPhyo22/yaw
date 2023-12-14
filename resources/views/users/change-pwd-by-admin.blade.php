@@ -4,7 +4,7 @@
 @endsection
 @section('content')
 <h4 class="py-3 font-weight-bolder">{{ config("constant.FORM_TITLE.CHANGE_PASSWORD") }}</h4>
-<form id="form" class="jumbotron shadow py-4" action="/admin/user/change-pwd-by-admin-complete/{{$userId}}" method="post">
+<form id="form" class="jumbotron shadow py-4" action="/user/change-pwd-by-admin-complete/{{$userId}}" method="post">
     {{csrf_field()}}
     <div class="mb-2 ml-3">
         <span class="font-weight-bold">{{$email}}</span>
@@ -72,7 +72,4 @@
 <script src="{{ asset('/js/password.js') }}"></script>
 <script src="{{ asset('/js/validation/change-pwd-by-admin-form-validation.js')}}"></script>
 <script src="{{ asset('/js/jquery.validate.min.js')}}"></script>
-<script>
-  var mailAddress = "{{ $email }}";
-</script>
 @endsection

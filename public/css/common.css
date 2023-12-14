@@ -20,6 +20,7 @@ select {
 .jumbotron {
     padding: 10px 10px;
     background-color: #f4ecf4;
+    align-items: center;
 }
 
 .btn-default {
@@ -93,7 +94,7 @@ td {
 
 /* nav icon  */
 .navbar {
-    background-color: #8b56ac;
+    background-color: #b48acf;
     color: white;
     height: 52px;
     font-size: 30px;

@@ -401,26 +401,6 @@ https://www.tooplate.com/view/2120-ben-resume
     width: 100%;
   }
 
-  .testimonials .owl-theme .owl-nav.disabled+.owl-dots {
-    margin-top: 2rem;
-  }
-
-  .testimonials .owl-theme .owl-dots .owl-dot {
-    outline: none;
-  }
-
-  .testimonials .owl-theme .owl-dots .owl-dot span {
-    width: 30px;
-    height: 3px;
-    margin: 5px;
-  }
-
-  .testimonials .owl-theme .owl-dots .owl-dot.active span, 
-  .testimonials .owl-theme .owl-dots .owl-dot:hover span {
-    background: var(--primary-color);
-  }
-
-
   /*---------------------------------------
      CONTACT               
   -----------------------------------------*/

@@ -16,6 +16,7 @@
 <div class="d-flex" id="wrapper">
     @include('layouts.admin.sidebar')
     <div id="page-content-wrapper">
+        @include('layouts.admin.nav')
         <div class="container-fluid content-height">
             @yield('content')
         </div>
