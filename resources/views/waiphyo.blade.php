@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
   <link rel="stylesheet" href="{{ asset('/personal/css/tooplate-ben-resume-style.css') }}">
 </head>
-<body style="background-color: red;" data-spy="scroll" data-target="#navbarNav" data-offset="50">
+<body class="bd" data-spy="scroll" data-target="#navbarNav" data-offset="50">
     <!-- MENU BAR -->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
