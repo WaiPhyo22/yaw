@@ -1,6 +1,6 @@
 @extends('layouts.admin.master')
 @section('pageCss')
-<link href="{{ asset('/css/change-pwd.css') }}" rel="stylesheet">
+<link href="css/change-pwd.css" rel="stylesheet">
 @endsection
 @section('content')
 <h4 class="py-3 font-weight-bolder">{{ config("constant.FORM_TITLE.CHANGE_PASSWORD") }}</h4>
@@ -69,7 +69,7 @@
 </form>
 @endsection
 @section('pageJs')
-<script src="{{ asset('/js/password.js') }}"></script>
-<script src="{{ asset('/js/validation/change-pwd-by-admin-form-validation.js')}}"></script>
-<script src="{{ asset('/js/jquery.validate.min.js')}}"></script>
+<script src="js/password.js"></script>
+<script src="js/validation/change-pwd-by-admin-form-validation.js"></script>
+<script src="js/jquery.validate.min.js"></script>
 @endsection

@@ -67,7 +67,7 @@
 </form>
 @endsection
 @section('pageJs')
-<script src="{{ asset('/js/password.js')}}"></script>
-<script src="{{ asset('/js/validation/user-edit-form-validation.js')}}"></script>
-<script src="{{ asset('/js/jquery.validate.min.js')}}"></script>
+<script src=".js/password.js"></script>
+<script src=".js/validation/user-edit-form-validation.js"></script>
+<script src=".js/jquery.validate.min.js"></script>
 @endsection

@@ -4,7 +4,7 @@
 <meta http-equiv="refresh" content="6000">
 @endsection
 @section('pageCss')
-<link rel="stylesheet" href="{{ asset('/css/login.css') }}">
+<link rel="stylesheet" href="css/login.css">
 @endsection
 @section('content')
 <div>
@@ -60,7 +60,7 @@
 </div>
 @endsection
 @section('pageJs')
-<script src="{{ asset('/js/password.js')}}"></script>
-<script src="{{ asset('/js/validation/login-form-validation.js')}}"></script>
-<script src="{{ asset('/js/jquery.validate.min.js')}}"></script>
+<script src="js/password.js"></script>
+<script src="js/validation/login-form-validation.js"></script>
+<script src="js/jquery.validate.min.js"></script>
 @endsection

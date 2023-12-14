@@ -115,5 +115,5 @@
 <!-- End Delete Modal  -->
 @endsection
 @section('pageJs')
-<script src="{{ asset('/js/delete.js')}}"></script>
+<script src="/./js/delete.js"></script>
 @endsection
