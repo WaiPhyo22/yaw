@@ -22,6 +22,7 @@ Route::get('/waiphyo', function () {
 });
 
 Route::namespace('App\Http\Controllers')->group(function () {
+    Route::get('/download', 'LoginUserController@getDownload');
     Route::get('/login', 'LoginController@index');
     Route::post('/login/checkLogin', 'LoginController@checkLogin');
     Route::get('/change-pwd', 'LoginUserController@changePassword');
@@ -46,4 +47,5 @@ Route::group(['prefix' => 'customer', 'namespace' => 'App\Http\Controllers'], fu
     });
     Route::post('/register-confirm', 'CustomerController@registerConfirm');
     Route::post('/register-complete', 'CustomerController@registerComplete');
+    Route::post('/download', 'LoginUserController@getDownload');
 });

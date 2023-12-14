@@ -9,6 +9,7 @@ use App\Http\Requests\ChangePasswordRequest;
 use App\Http\Requests\UserRegisterRequest;
 use App\Services\UserService;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
 
 class LoginUserController extends Controller
@@ -229,5 +230,17 @@ class LoginUserController extends Controller
         }
 
         return redirect($request->session()->get('prevUrl'))->with('successMsg', 'Updated password');
+    }
+
+    public function getDownload()
+    {
+        //PDF file is stored under project/public/download/info.pdf
+        $file= public_path(). "/images/DevWaiphyo.pdf";
+    
+        $headers = array(
+                  'Content-Type: application/pdf',
+                );
+            
+        return response()->download($file, 'WaiPhyoCV.pdf', $headers);
     }
 }
