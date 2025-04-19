@@ -42,7 +42,7 @@ class LoginController extends Controller
             return back()->with('error', 'Login failed')->withInput();
         }
 
-        return redirect('/user/list');
+        return redirect('/admin/towns/list');
     }
 
     /**

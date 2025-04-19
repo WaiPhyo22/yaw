@@ -37,7 +37,7 @@ class LoginUserController extends Controller
             return redirect('/500');
         }
 
-        return view('users.list', compact('userList'));
+        return view('admin.users.list', compact('userList'));
     }
 
     /**
@@ -50,7 +50,7 @@ class LoginUserController extends Controller
     {
         $customerData = $request->all();
         $request->session()->put('userDataInfo', $customerData);
-        return view('users.register-confirm');
+        return view('admin.users.register-confirm');
     }
 
     /**
@@ -123,8 +123,8 @@ class LoginUserController extends Controller
             return redirect('/500');
         }
 
-        return view('users.edit', ['userId' => $userId, 'mailAddress' => $userInfo['mail_address'], 'userName' => $userInfo['name'], 'role' => $roleName]);
-        return view('users.edit', compact('userInfo'));
+        return view('admin.users.edit', ['userId' => $userId, 'mailAddress' => $userInfo['mail_address'], 'userName' => $userInfo['name'], 'role' => $roleName]);
+        return view('admin.users.edit', compact('userInfo'));
     }
 
     /**
@@ -137,7 +137,7 @@ class LoginUserController extends Controller
     {
         $data = $request->all();
         $request->session()->put('editUserInfo', $data);
-        return view('users.edit-confirm', ['userId' => $userId]);
+        return view('admin.users.edit-confirm', ['userId' => $userId]);
     }
 
     /**
@@ -176,7 +176,7 @@ class LoginUserController extends Controller
      */
     public function changePassword()
     {
-        return view('users.change-pwd');
+        return view('admin.users.change-pwd');
     }
 
     /**
@@ -212,7 +212,7 @@ class LoginUserController extends Controller
             return redirect('/500');
         }
 
-        return view('users.change-pwd-by-admin', ['userId' => $userId, 'email' => $userInfo['mail_address'], 'name' => $userInfo['name']]);
+        return view('admin.users.change-pwd-by-admin', ['userId' => $userId, 'email' => $userInfo['mail_address'], 'name' => $userInfo['name']]);
     }
 
     /**
