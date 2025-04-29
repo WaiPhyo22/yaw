@@ -24,8 +24,8 @@ Route::get('/waiphyo', function () {
     return view('waiphyo');
 });
 
-Route::get('/AnyarWarBin', function () {
-    return view('anyarwarbin');
+Route::get('/anyarwarbin', function () {
+    return view('village');
 });
 
 Route::get('/', [FrontendController::class, 'home'])->name('home');
