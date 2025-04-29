@@ -44,13 +44,14 @@
 
 <section id="traditions">
   <h2>ဓလေ့ထုံးတမ်း</h2>
-  <p>အညာဝါးဘင်းရွာတွင် သီတင်းကျွတ်အခါသမယ၊ သကေတမင်္ဂလာ၊ ရွာပွဲတော်များအတွက် ရိုးရာအခမ်းအနားများကျင်းပလေ့ရှိသည်။</p>
+  <p>အညာဝါးဘင်းရွာတွင် သီတင်းကျွတ်အခါသမယ၊ ရွာပွဲတော်များအတွက် ရိုးရာအခမ်းအနားများကျင်းပလေ့ရှိသည်။</p>
 </section>
 
 <section id="photos">
   <h2>ရွာဓာတ်ပုံများ</h2>
-  <img src="images/village1.jpg" alt="ရွာအလှ">
-  <img src="images/festival.jpg" alt="ရွာပွဲတော်">
+  <img src="images/village2.jpg" alt="">
+  <img src="images/village5.jpg" alt="">
+  <img src="images/village6.jpg" alt="">
 </section>
 
 <section id="location">
@@ -60,7 +61,7 @@
 </section>
 
 <footer>
-  <p>© 2025 အညာဝါးဘင်းရွာ. မူပိုင်ခွင့်ရှိသည်။</p>
+  <p>© 2025 အညာဝါးဘင်းရွာ။</p>
 </footer>
 
 </body>
