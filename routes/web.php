@@ -28,6 +28,10 @@ Route::get('/anyarwarbin', function () {
     return view('village');
 });
 
+Route::get('/digitalcity', function () {
+    return view('digitalcity');
+});
+
 Route::get('/', [FrontendController::class, 'home'])->name('home');
 Route::get('/home', [FrontendController::class, 'home'])->name('home');
 Route::get('/about', [FrontendController::class, 'about'])->name('about');

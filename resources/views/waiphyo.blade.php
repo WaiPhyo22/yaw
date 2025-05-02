@@ -110,7 +110,7 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6 mb-4 mb-md-0 text-center">
-            <img src="images/agency.jpg" alt="About Wai Phyo" class="img-fluid rounded shadow-sm" style="max-height: 350px;">
+            <img src="images/congratulation.jpg" alt="About Wai Phyo" class="img-fluid rounded shadow-sm" style="max-height: 350px;">
           </div>
           <div class="col-md-6">
             <h2 class="mb-4">About Me</h2>
