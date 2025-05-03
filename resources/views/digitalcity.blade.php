@@ -87,6 +87,7 @@
 
     <footer class="bg-dark text-white text-center py-3">
         <p>© 2025 Digital City. ဆက်သွယ်ရန် - 09 441 443 993 | Mandalay, Myanmar</p>
+        <p class="mb-0 mt-2">Developed by <a href="/waiphyo" target="_blank">Wai Phyo</a></p>
     </footer>
 
 </body>

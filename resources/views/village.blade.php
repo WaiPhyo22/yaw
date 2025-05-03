@@ -62,6 +62,7 @@
 
 <footer>
   <p>© 2025 အညာဝါးဘင်းရွာ။</p>
+  <p class="mb-0 mt-2">Developed by <a href="/waiphyo" target="_blank">Wai Phyo</a></p>
 </footer>
 
 </body>
