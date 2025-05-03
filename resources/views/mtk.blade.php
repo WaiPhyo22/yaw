@@ -149,7 +149,7 @@
     <h2>Contact Us</h2>
     <p><strong>Phone:</strong> 09-250231507</p>
     <p><strong>Email:</strong> kyawminsoe.pku@gmail.com</p>
-    <p><strong>Address:</strong> အမှတ် (၁၁) ရပ်ကွက်၊ (၇) လမ်းနှင့် (၁၀) လမ်းကြား၊ ပြင်လယ်မဉ္ဇူ၊ ပခုက္ကူ။</p>
+    <p><strong>Address:</strong> အမှတ် (၁၁) ရပ်ကွက်၊ (၇) လမ်းနှင့် (၁၀) လမ်းကြား၊ မြိုင်လမ်းမကြီး၊ ပခုက္ကူမြို့။</p>
   </div>
 </section>
 
@@ -158,11 +158,10 @@
   <div class="container">
     <h2 class="text-center mb-4">MTK Computer Location</h2>
     <div class="map-responsive">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3817.723109164049!2d95.059407!3d21.3426728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ca0a639a65c00f%3A0x271e66eefd3445d6!2sMTK%20Computer!5e0!3m2!1sen!2smm!4v1714720815602!5m2!1sen!2smm"
-        width="100%" height="400" style="border:0;" allowfullscreen=""
-        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3817.4606390722946!2d95.0785573!3d21.337265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ca0b0033f403d5%3A0xed598066535ef7b7!2sMTK!5e0!3m2!1sen!2smm!4v1714729000000!5m2!1sen!2smm"
+      width="100%" height="400" style="border:0;" allowfullscreen=""
+      loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
     </div>
   </div>
 </section>
