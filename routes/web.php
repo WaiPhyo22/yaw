@@ -36,6 +36,18 @@ Route::get('/mtk', function () {
     return view('mtk');
 });
 
+Route::get('/bgk', function () {
+    return view('bgk');
+});
+
+Route::get('/bgk/allproducts', function () {
+    return view('bgk-product');
+});
+
+Route::get('/bgk/contact', function () {
+    return view('bgk-contact');
+});
+
 Route::get('/', [FrontendController::class, 'home'])->name('home');
 Route::get('/home', [FrontendController::class, 'home'])->name('home');
 Route::get('/about', [FrontendController::class, 'about'])->name('about');
