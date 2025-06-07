@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Suggestion;
 use Illuminate\Http\Request;
+use App\Mail\TestMail;
+use Illuminate\Support\Facades\Mail;
 
 class SuggestionController extends Controller
 {
@@ -20,6 +22,11 @@ class SuggestionController extends Controller
             'email' => 'nullable|email',
             'message' => 'required|string|max:1000',
         ]);
+
+        $data = ['name' => $request->name,
+                'message' => $request->message
+                ];
+        Mail::to($request->email)->send(new TestMail($data));
     
         Suggestion::create($request->only('name', 'phone', 'email', 'message'));
     
