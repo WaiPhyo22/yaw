@@ -26,7 +26,7 @@ class SuggestionController extends Controller
         $data = ['name' => $request->name,
                 'message' => $request->message
                 ];
-        Mail::to($request->email)->send(new TestMail($data));
+        // Mail::to($request->email)->send(new TestMail($data));
     
         Suggestion::create($request->only('name', 'phone', 'email', 'message'));
     
