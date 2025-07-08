@@ -71,11 +71,11 @@
                     </i>
                     </p>
                     <div class="d-flex justify-content-center justify-content-md-start social-div" style="--color: #71a9ad;">
-                        <a href="https://www.facebook.com/ph" class="social" target="_blank"><img src="portfolioimage/facebook.png" alt="" width="40" height="40"></a>
-                        <a href="https://www.tiktok.com/@ph" class="social" target="_blank"><img src="portfolioimage/tiktok.png" alt="" width="40" height="40"></a>
+                        <a href="https://www.facebook.com/phyo.chit.ko.418075" class="social" target="_blank"><img src="portfolioimage/facebook.png" alt="" width="40" height="40"></a>
+                        <a href="https://www.tiktok.com/@phyochitko51" class="social" target="_blank"><img src="portfolioimage/tiktok.png" alt="" width="40" height="40"></a>
                         <a href=""><img src="portfolioimage/instergram.png" class="social" alt="" width="40" height="40"></a>
-                        <a href="https://github.com/P" class="social"><img src="portfolioimage/github.webp" alt="" width="40" height="40"></a>
-                        <a href="mailto:pdhje29@gmail.com" class="social" target="_blank"><img src="portfolioimage/mail.png" alt="Email" width="60" height="60"></a>
+                        <a href="https://github.com/Phyo-Chit-Ko" class="social"><img src="portfolioimage/github.webp" alt="" width="40" height="40"></a>
+                        <a href="mailto:pchitko29@gmail.com" class="social"><img src="portfolioimage/mail.png" alt="Email" width="60" height="60"></a>
                     </div>
                 </div>
             </div>
