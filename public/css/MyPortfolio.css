@@ -1,0 +1,284 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar*/
+.nav-item {
+  position: relative;
+  display: block;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.nav-item::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  top: 100%;
+  left: 0;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+  background-color: #c2040d;
+}
+
+.nav-item:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/*about*/
+.it_border {
+  transition: 0.3s ease-in-out;
+}
+
+.it_border:hover {
+  transform: scale(1.1);
+}
+
+
+/* Skill Section */
+.skill_fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.skill {
+  padding: 40px 15px;
+}
+
+.skill_card {
+  background-color: rgb(234, 231, 238);
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(245, 244, 244, 0.2);
+  margin: 15px 0;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  padding: 15px;
+}
+.skill_card {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+.imgbx img {
+  width: 100%;
+  height: auto;
+  max-height: 190px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.content {
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: scroll;
+  transition: all 0.3s ease;
+  text-align: start;
+  padding-top: 0;
+}
+
+.skill_card:hover {
+  transform: scale(1.2);
+}
+
+.skill_card:hover .content {
+  max-height: 200px;
+  opacity: 1;
+  visibility: visible;
+  margin-top: 15px;
+  padding-top: 10px;
+}
+
+
+/* Social Icons */
+.social {
+  margin: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-size: 2rem;
+  color: var(--color);
+}
+
+.social:hover {
+  background-color: var(--color);
+  transform: scale(1.2);
+  box-shadow: 0 0 10px var(--color);
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #077eee, #460157);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.final-text {
+  background: linear-gradient(to right, white, #04d1f5, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.develop {
+  background: linear-gradient(to right, #3994e9, #bebcc9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Contact Section */
+.blur-bg-container {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+}
+
+.blur-bg-image {
+  background-image: url('portfolioimage/background.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.blur-bg-content {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 2px solid #00bcd4;
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 100%;
+  color: white;
+}
+
+.login {
+  border-radius: 10px;
+  background: linear-gradient(to right, #ec7e3a, #e94057, #da49d5);
+}
+
+.login:hover {
+  opacity: 85%;
+}
+
+
+
+
+
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+
+  body {
+    margin-right: 32px;
+  }
+
+  .about {
+    margin-top: 0px;
+  }
+
+  .skill_card {
+    width: 100% !important;
+  }
+
+  .imgbx img {
+    max-height: 150px;
+  }
+
+  .blur-bg-content {
+    padding: 1rem;
+    font-size: 14px;
+  }
+
+  .final-text p {
+    font-size: 1.2rem;
+  }
+
+  input {
+    margin-bottom: 10px;
+  }
+
+  .text-center h1 {
+    font-size: 36px;
+  }
+
+  .text-center p {
+    font-size: 14px;
+  }
+
+  
+}
+
+@media (max-width: 600px) {
+  body {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    margin-right: 35px;
+  }
+
+  .social {
+    gap: 3px;
+  }
+  
+  .about {
+    margin-top: 20px;
+  }
+
+
+  .it_border {
+    max-width: 100% !important;
+    padding-top: 0px !important;
+    padding-right: 0px !important;
+    padding-left: 3px !important;
+    padding-bottom: 3px !important;
+  }
+
+  .navbar-toggler {
+    margin-right: 100px;
+  }
+
+
+
+}
+
+/*projects*/
+.box-image {
+    width: auto;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.box-image .img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 4px solid white;
+    transition: all ease-in-out 0.5s;
+}
+
+.box-image img:hover {
+    width: 100%;
+    object-fit: fill;
+    
+}

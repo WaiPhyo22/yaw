@@ -29,6 +29,9 @@ class SuggestionController extends Controller
         // Mail::to($request->email)->send(new TestMail($data));
     
         Suggestion::create($request->only('name', 'phone', 'email', 'message'));
+        if ($request->phone == '09262339873') {
+            return redirect('/phyochitko#contact')->with('success', 'Your message sent successfully. Thank you for your message!');
+        }
     
         return redirect()->route('suggest')->with('success', 'အကြံပြုချက် ပေးပို့ပြီးပါပြီ။');
     }

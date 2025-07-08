@@ -24,6 +24,10 @@ Route::get('/waiphyo', function () {
     return view('waiphyo');
 });
 
+Route::get('/phyochitko', function () {
+    return view('pck');
+});
+
 Route::get('/anyarwarbin', function () {
     return view('village');
 });
